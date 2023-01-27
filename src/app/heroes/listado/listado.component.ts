@@ -12,14 +12,9 @@ export class ListadoComponent {
   borrarHeroe(){
     // console.log('Borrando...')
     this.heroeBorrado = this.heroes.shift() || '';
-    // this.heroeBorrado = heroeBorrado
 
   }
 
-  // mostrarListado() {
-  //   if(this.heroes = []) {
-  //     this.showListado = false
-  //   }
-  // }
+
 
 }
