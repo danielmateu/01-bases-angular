@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interface';
+import { DbzService } from '../services/dbz.service';
 
 
 
@@ -11,28 +12,24 @@ import { Personaje } from '../interfaces/dbz.interface';
 
 export class MainPageComponent {
 
-  personajes: Personaje[] = [
-    {
-      nombre: 'Goku',
-      poder: 15000
-    },
-    {
-      nombre: 'Vegeta',
-      poder: 8500
-    }
-  ];
-
   nuevo: Personaje = {
     nombre: 'Mastro Roshi',
     poder: 1000
   }
 
   agregarNuevoPersonaje(argumento: Personaje){
-    // console.log('Main page component')
-    // console.log(argumento)
     // debugger;
-    this.personajes.push(argumento)
+    // this.personajes.push(argumento)
   }
+
+  /**
+   * The constructor function is a special function that is called when an instance of a class is
+   * created
+   * @param {DbzService} dbzService - This is the name of the parameter.
+   */
+  constructor() {}
+
+
 
 
 

@@ -80,5 +80,6 @@ En este ejemplo, la función "handlerFunction" se llama cada vez que el evento "
 - EventEmitter
 EventEmitter es una clase de Angular que se utiliza para emitir eventos desde un componente o servicio hacia su componente padre o componentes hermanos. Se utiliza para comunicar información de un componente a otro a través de la arquitectura de componentes de Angular. Los componentes pueden suscribirse a los eventos emitidos mediante una directiva de enlace de eventos, como (event)="handlerFunction()", y pueden recibir los datos emitidos como argumentos en la función manejadora. EventEmitter es una clase genérica, lo que significa que se puede especificar el tipo de datos que se emitirá.
 
-- Servicions
+- Servicios
 Los servicios de Angular son clases que contienen lógica de negocio y/o funcionalidad reutilizable que se utilizan en varios componentes de una aplicación. Los servicios se utilizan para aislar la lógica de negocio de los componentes, lo que permite que los componentes sean más pequeños y manejables. Los servicios se pueden inyectar en componentes mediante la inyección de dependencias, lo que permite que los componentes accedan a la funcionalidad del servicio y reciban actualizaciones automáticas cuando la lógica del servicio cambie. Los servicios también se pueden utilizar para compartir datos entre componentes, comunicarse con APIs externas y manejar tareas asíncronas.
+l decorador de los servicios - > @Injectable
