@@ -41,3 +41,44 @@ ng g m (Creación de módulo automatico)
 
 - Creación Componentes con banderas
  ng g c dbz/mainPage --skip-tests -> Crea el componente mainPage y nos ignora los tests
+
+- ngModel
+ngModel es una directiva de Angular que se utiliza para vincular un elemento de formulario con una propiedad de un componente. Esto permite que los datos de un formulario se enlacen con la lógica de negocio en el componente y se utilice para realizar operaciones como la validación y el envío de formularios. También permite que los cambios en el formulario se reflejen automáticamente en la propiedad vinculada en el componente y viceversa.
+
+- @Input
+@Input es un decorador de Angular que se utiliza para especificar que una propiedad de un componente es una entrada. Esto permite que los datos se pasen desde un componente padre a un componente hijo a través de la arquitectura de componentes de Angular. La sintaxis para utilizar @Input es:
+
+@Input() propertyName: any;
+
+donde "propertyName" es el nombre de la propiedad que se declara como entrada y "any" es el tipo de datos que se espera recibir. En el componente padre, se puede pasar el valor de la propiedad mediante un enlace de propiedad, como:
+
+<app-child-component [propertyName]="value"></app-child-component>
+
+En este ejemplo, el valor de "value" se asigna a la propiedad "propertyName" en el componente hijo.
+
+Además, es posible utilizar @Input para recibir valores dinámicos en el componente hijo.
+
+- @Output 
+@Output es un decorador de Angular que se utiliza para especificar que una propiedad de un componente es una salida. Esto permite que los componentes comuniquen entre sí a través de eventos. La sintaxis para utilizar @Output es:
+
+@Output() eventName = new EventEmitter<eventType>();
+
+donde "eventName" es el nombre del evento que se está emitiento, y "eventType" es el tipo de datos que se espera recibir en el componente padre.
+
+En el componente hijo, se puede emitir el evento mediante la función "emit" del objeto EventEmitter, como:
+
+this.eventName.emit(value);
+
+donde "value" es el valor que se está enviando.
+
+En el componente padre, se puede suscribir al evento mediante un enlace de eventos, como:
+
+<app-child-component (eventName)="handlerFunction($event)"></app-child-component>
+
+En este ejemplo, la función "handlerFunction" se llama cada vez que el evento "eventName" es emitido y recibe el valor emitido como argumento.
+
+- EventEmitter
+EventEmitter es una clase de Angular que se utiliza para emitir eventos desde un componente o servicio hacia su componente padre o componentes hermanos. Se utiliza para comunicar información de un componente a otro a través de la arquitectura de componentes de Angular. Los componentes pueden suscribirse a los eventos emitidos mediante una directiva de enlace de eventos, como (event)="handlerFunction()", y pueden recibir los datos emitidos como argumentos en la función manejadora. EventEmitter es una clase genérica, lo que significa que se puede especificar el tipo de datos que se emitirá.
+
+- Servicions
+Los servicios de Angular son clases que contienen lógica de negocio y/o funcionalidad reutilizable que se utilizan en varios componentes de una aplicación. Los servicios se utilizan para aislar la lógica de negocio de los componentes, lo que permite que los componentes sean más pequeños y manejables. Los servicios se pueden inyectar en componentes mediante la inyección de dependencias, lo que permite que los componentes accedan a la funcionalidad del servicio y reciban actualizaciones automáticas cuando la lógica del servicio cambie. Los servicios también se pueden utilizar para compartir datos entre componentes, comunicarse con APIs externas y manejar tareas asíncronas.
