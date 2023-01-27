@@ -1,27 +1,25 @@
-# Bases
+# Conceptos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
+- One Way Data Binding / Two Way
+La vinculación de datos unidireccional(oneway) y bidireccional(twoway) son dos de las formas importantes por las que podemos intercambiar datos desde el componente al DOM y viceversa. El intercambio de datos entre el componente y la vista nos ayudará a construir aplicaciones web dinámicas e interactivas.
 
-## Development server
+La vinculación de datos unidireccional vinculará los datos del componente a la vista (DOM) o de la vista al componente. La vinculación de datos unidireccional es unidireccional. Sólo se pueden vincular los datos del componente a la vista o de la vista al componente.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
 
-## Code scaffolding
+- Del componente a la vista/From Component to View
+Existen diferentes técnicas de vinculación de datos que utilizan la vinculación de datos unidireccional para vincular datos de un componente a una vista. A continuación se muestran algunas de las técnicas que utilizan la vinculación de datos unidireccional.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Enlace por interpolación/Interpolation Binding: 
+La interpolación se refiere a la vinculación de expresiones en lenguaje marcado.
+Enlace de propiedades: La vinculación de propiedades se utiliza para establecer una propiedad de un elemento de la vista. La vinculación establece la propiedad en el valor de una expresión de plantilla.
+Vinculación de atributos: La vinculación de atributos se utiliza para establecer una propiedad de atributo de un elemento de la vista.
+- Clase/Class Binding: 
+El enlace de clase se utiliza para establecer una propiedad de clase de un elemento de la vista.
+- Estilo/Style Binding: 
+La vinculación de estilo se utiliza para establecer el estilo de un elemento de la vista.
 
-## Build
+- Creacion de componentes de forma automática
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+comando + directorio + nombre componente
+ng g c heroes/listado
