@@ -9,11 +9,17 @@ export class ListadoComponent {
   heroes: string[] = ['Spiderman', 'IronMan', 'Hulk', 'Son Goku'];
   heroeBorrado: string = '' ;
 
-
   borrarHeroe(){
     // console.log('Borrando...')
     this.heroeBorrado = this.heroes.shift() || '';
     // this.heroeBorrado = heroeBorrado
+
   }
+
+  // mostrarListado() {
+  //   if(this.heroes = []) {
+  //     this.showListado = false
+  //   }
+  // }
 
 }

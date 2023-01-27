@@ -27,3 +27,10 @@ ng g c heroes/listado
 - Directiva ngFor
 
 La directiva ngForOf se utiliza generalmente en la forma abreviada *ngFor. En esta forma, la plantilla que se renderiza para cada iteración es el contenido de un elemento ancla que contiene la directiva.
+
+
+- Directiva ngIF
+
+Generalmente se utiliza una forma abreviada de la directiva, *ngIf="condition", proporcionada como un atributo del elemento ancla para la plantilla insertada. Angular amplía esto a una versión más explícita, en la que el elemento de anclaje está contenido en un elemento <ng-template>.
+
+La directiva *ngIf se utiliza más comúnmente para mostrar condicionalmente una plantilla en línea. La plantilla else por defecto está en blanco.
