@@ -39,3 +39,30 @@ button:focus{
 .p-1 {
   padding: 1px;
 }
+
+.row {
+  display: flex
+}
+
+.col {
+  flex-grow: 1;
+  /* justify-content: space-between; */
+  justify-content: center;
+  padding: 2em;
+}
+
+input{
+  display: block;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  background-color: #d6d6d6ce
+}
+
+.input-form{
+  margin: 1em 0 1em 0
+}

@@ -37,4 +37,7 @@ La directiva *ngIf se utiliza más comúnmente para mostrar condicionalmente una
 
 - Módulos
 
+ng g m (Creación de módulo automatico)
 
+- Creación Componentes con banderas
+ ng g c dbz/mainPage --skip-tests -> Crea el componente mainPage y nos ignora los tests
