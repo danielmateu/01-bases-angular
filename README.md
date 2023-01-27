@@ -23,3 +23,7 @@ La vinculación de estilo se utiliza para establecer el estilo de un elemento de
 
 comando + directorio + nombre componente
 ng g c heroes/listado
+
+- Directiva ngFor
+
+La directiva ngForOf se utiliza generalmente en la forma abreviada *ngFor. En esta forma, la plantilla que se renderiza para cada iteración es el contenido de un elemento ancla que contiene la directiva.
